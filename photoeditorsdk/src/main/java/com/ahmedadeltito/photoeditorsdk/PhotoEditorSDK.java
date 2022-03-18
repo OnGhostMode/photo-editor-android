@@ -91,6 +91,7 @@ public class PhotoEditorSDK implements MultiTouchListener.OnMultiTouchListener {
         emojiTextView.setTypeface(emojiFont);
         emojiTextView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         emojiTextView.setText(convertEmoji(emojiName));
+        emojiTextView.setTextSize(100);
         MultiTouchListener multiTouchListener = new MultiTouchListener(deleteView,
                 parentView, this.imageView, onPhotoEditorSDKListener);
         multiTouchListener.setOnMultiTouchListener(this);
