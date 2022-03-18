@@ -29,3 +29,17 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
 }
+
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.OnGhostMode'
+                artifactId = 'photoeditorsdk'
+                version = '1.0'
+            }
+        }
+    }
+}
