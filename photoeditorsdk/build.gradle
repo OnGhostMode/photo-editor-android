@@ -2,6 +2,7 @@ plugins {
     id 'maven-publish'
 }
 apply plugin: 'com.android.library'
+apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 25
@@ -40,7 +41,7 @@ afterEvaluate {
 
                 groupId = 'com.github.OnGhostMode'
                 artifactId = 'photoeditorsdk'
-                version = '1.0'
+                version = '1.17'
             }
         }
 }
