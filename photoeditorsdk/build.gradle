@@ -1,7 +1,4 @@
 apply plugin: 'com.android.library'
-plugins{
-    id 'maven-publish'
-}
 
 android {
     compileSdkVersion 25
@@ -22,6 +19,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+}
+
+plugins{
+    id 'maven-publish'
 }
 
 dependencies {
